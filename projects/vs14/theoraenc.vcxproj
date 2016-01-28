@@ -35,9 +35,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{43DB64DF-CB94-46B2-8C6C-737F288634A0}</ProjectGuid>
+    <ProjectGuid>{81286FA7-F1F7-4E9A-A25E-B146F632E691}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>theora</RootNamespace>
+    <RootNamespace>theoraenc</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -621,54 +621,45 @@ ENDLOCAL
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\include\theora\codec.h" />
-    <ClInclude Include="..\..\include\theora\theora.h" />
-    <ClInclude Include="..\..\include\theora\theoradec.h" />
-    <ClInclude Include="..\..\include\theora\theoraenc.h" />
-    <ClInclude Include="..\..\lib\internal.h" />
-    <ClInclude Include="..\..\lib\encint.h" />
-    <ClInclude Include="..\..\lib\enquant.h" />
-    <ClInclude Include="..\..\lib\huffenc.h" />
-    <ClInclude Include="..\..\lib\mathops.h" />
-    <ClInclude Include="..\..\lib\modedec.h" />
-    <ClInclude Include="..\..\lib\apiwrapper.h" />
-    <ClInclude Include="..\..\lib\bitpack.h" />
-    <ClInclude Include="..\..\lib\dct.h" />
-    <ClInclude Include="..\..\lib\decint.h" />
-    <ClInclude Include="..\..\lib\dequant.h" />
-    <ClInclude Include="..\..\lib\huffdec.h" />
-    <ClInclude Include="..\..\lib\huffman.h" />
-    <ClInclude Include="..\..\lib\ocintrin.h" />
-    <ClInclude Include="..\..\lib\quant.h" />
-    <ClInclude Include="..\..\lib\state.h" />
-    <ClInclude Include="..\..\lib\x86_vc\x86cpu.h" />
-    <ClInclude Include="..\..\lib\x86_vc\x86enc.h" />
-    <ClInclude Include="..\..\lib\x86_vc\x86int.h" />
-    <ClInclude Include="..\..\lib\x86_vc\x86zigzag.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\lib\analyze.c" />
     <ClCompile Include="..\..\lib\apiwrapper.c" />
-    <ClCompile Include="..\..\lib\decapiwrapper.c" />
-    <ClCompile Include="..\..\lib\decinfo.c" />
-    <ClCompile Include="..\..\lib\decode.c" />
-    <ClCompile Include="..\..\lib\dequant.c" />
     <ClCompile Include="..\..\lib\encapiwrapper.c" />
     <ClCompile Include="..\..\lib\encinfo.c" />
     <ClCompile Include="..\..\lib\encode.c" />
     <ClCompile Include="..\..\lib\enquant.c" />
     <ClCompile Include="..\..\lib\huffenc.c" />
-    <ClCompile Include="..\..\lib\mcenc.c" />
-    <ClCompile Include="..\..\lib\rate.c" />
-    <ClCompile Include="..\..\lib\tokenize.c" />
-    <ClCompile Include="..\..\lib\huffdec.c" />
-    <ClCompile Include="..\..\lib\info.c" />
     <ClCompile Include="..\..\lib\internal.c" />
+    <ClCompile Include="..\..\lib\mcenc.c" />
     <ClCompile Include="..\..\lib\quant.c" />
+    <ClCompile Include="..\..\lib\rate.c" />
     <ClCompile Include="..\..\lib\state.c" />
+    <ClCompile Include="..\..\lib\tokenize.c" />
     <ClCompile Include="..\..\lib\x86_vc\mmxstate.c" />
     <ClCompile Include="..\..\lib\x86_vc\x86enc.c" />
     <ClCompile Include="..\..\lib\x86_vc\x86state.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\theora\codec.h" />
+    <ClInclude Include="..\..\include\theora\theora.h" />
+    <ClInclude Include="..\..\include\theora\theoraenc.h" />
+    <ClInclude Include="..\..\lib\apiwrapper.h" />
+    <ClInclude Include="..\..\lib\bitpack.h" />
+    <ClInclude Include="..\..\lib\dct.h" />
+    <ClInclude Include="..\..\lib\dequant.h" />
+    <ClInclude Include="..\..\lib\encint.h" />
+    <ClInclude Include="..\..\lib\enquant.h" />
+    <ClInclude Include="..\..\lib\huffenc.h" />
+    <ClInclude Include="..\..\lib\huffman.h" />
+    <ClInclude Include="..\..\lib\internal.h" />
+    <ClInclude Include="..\..\lib\mathops.h" />
+    <ClInclude Include="..\..\lib\ocintrin.h" />
+    <ClInclude Include="..\..\lib\quant.h" />
+    <ClInclude Include="..\..\lib\state.h" />
+    <ClInclude Include="..\..\lib\x86_vc\mmxloop.h" />
+    <ClInclude Include="..\..\lib\x86_vc\x86cpu.h" />
+    <ClInclude Include="..\..\lib\x86_vc\x86enc.h" />
+    <ClInclude Include="..\..\lib\x86_vc\x86int.h" />
+    <ClInclude Include="..\..\lib\x86_vc\x86zigzag.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
