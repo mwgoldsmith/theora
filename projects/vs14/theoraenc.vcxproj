@@ -203,8 +203,8 @@
   DEL "$(OutDir)..\..\licenses\$(ProjectName).txt"
 )
 
-IF EXIST "$(OutDir)..\..\include\theora" (
-  RD /s /q "$(OutDir)..\..\include\theora"
+IF EXIST "$(OutDir)..\..\include\theora\theoraenc.h" (
+  DEL "$(OutDir)..\..\include\theora\theoraenc.h"
 )</Command>
     </PreBuildEvent>
     <PostBuildEvent>
@@ -253,8 +253,8 @@ ENDLOCAL
   DEL "$(OutDir)..\..\licenses\$(ProjectName).txt"
 )
 
-IF EXIST "$(OutDir)..\..\include\theora" (
-  RD /s /q "$(OutDir)..\..\include\theora"
+IF EXIST "$(OutDir)..\..\include\theora\theoraenc.h" (
+  DEL "$(OutDir)..\..\include\theora\theoraenc.h"
 )</Command>
     </PreBuildEvent>
     <PostBuildEvent>
@@ -306,8 +306,8 @@ ENDLOCAL
   DEL "$(OutDir)..\..\licenses\$(ProjectName).txt"
 )
 
-IF EXIST "$(OutDir)..\..\include\theora" (
-  RD /s /q "$(OutDir)..\..\include\theora"
+IF EXIST "$(OutDir)..\..\include\theora\theoraenc.h" (
+  DEL "$(OutDir)..\..\include\theora\theoraenc.h"
 )</Command>
     </PreBuildEvent>
     <PostBuildEvent>
@@ -358,8 +358,8 @@ ENDLOCAL
   DEL "$(OutDir)..\..\licenses\$(ProjectName).txt"
 )
 
-IF EXIST "$(OutDir)..\..\include\theora" (
-  RD /s /q "$(OutDir)..\..\include\theora"
+IF EXIST "$(OutDir)..\..\include\theora\theoraenc.h" (
+  DEL "$(OutDir)..\..\include\theora\theoraenc.h"
 )</Command>
     </PreBuildEvent>
     <PostBuildEvent>
@@ -415,8 +415,8 @@ ENDLOCAL
   DEL "$(OutDir)..\..\licenses\$(ProjectName).txt"
 )
 
-IF EXIST "$(OutDir)..\..\include\theora" (
-  RD /s /q "$(OutDir)..\..\include\theora"
+IF EXIST "$(OutDir)..\..\include\theora\theoraenc.h" (
+  DEL "$(OutDir)..\..\include\theora\theoraenc.h"
 )</Command>
     </PreBuildEvent>
     <PostBuildEvent>
@@ -471,8 +471,8 @@ ENDLOCAL
   DEL "$(OutDir)..\..\licenses\$(ProjectName).txt"
 )
 
-IF EXIST "$(OutDir)..\..\include\theora" (
-  RD /s /q "$(OutDir)..\..\include\theora"
+IF EXIST "$(OutDir)..\..\include\theora\theoraenc.h" (
+  DEL "$(OutDir)..\..\include\theora\theoraenc.h"
 )</Command>
     </PreBuildEvent>
     <PostBuildEvent>
@@ -532,8 +532,8 @@ ENDLOCAL
   DEL "$(OutDir)..\..\licenses\$(ProjectName).txt"
 )
 
-IF EXIST "$(OutDir)..\..\include\theora" (
-  RD /s /q "$(OutDir)..\..\include\theora"
+IF EXIST "$(OutDir)..\..\include\theora\theoraenc.h" (
+  DEL "$(OutDir)..\..\include\theora\theoraenc.h"
 )</Command>
     </PreBuildEvent>
     <PostBuildEvent>
@@ -593,8 +593,8 @@ ENDLOCAL
   DEL "$(OutDir)..\..\licenses\$(ProjectName).txt"
 )
 
-IF EXIST "$(OutDir)..\..\include\theora" (
-  RD /s /q "$(OutDir)..\..\include\theora"
+IF EXIST "$(OutDir)..\..\include\theora\theoraenc.h" (
+  DEL "$(OutDir)..\..\include\theora\theoraenc.h"
 )</Command>
     </PreBuildEvent>
     <PostBuildEvent>
