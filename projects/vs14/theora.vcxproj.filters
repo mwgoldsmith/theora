@@ -13,15 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\x86_vc">
+      <UniqueIdentifier>{18553c1f-ba2a-461f-8356-0c7466f1a0eb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\lib\analyze.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\lib\apiwrapper.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\lib\bitpack.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\lib\decapiwrapper.c">
@@ -39,9 +39,6 @@
     <ClCompile Include="..\..\lib\encapiwrapper.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\lib\encfrag.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\lib\encinfo.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -51,16 +48,7 @@
     <ClCompile Include="..\..\lib\enquant.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\lib\fdct.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\lib\idct.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\lib\huffenc.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\lib\mathops.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\lib\mcenc.c">
@@ -70,9 +58,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\lib\tokenize.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\lib\fragment.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\lib\huffdec.c">
@@ -90,29 +75,47 @@
     <ClCompile Include="..\..\lib\state.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\lib\x86_vc\mmxencfrag.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\lib\x86_vc\mmxfdct.c">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\lib\x86_vc\mmxstate.c">
+      <Filter>Source Files\x86_vc</Filter>
     </ClCompile>
     <ClCompile Include="..\..\lib\x86_vc\mmxfrag.c">
+      <Filter>Source Files\x86_vc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\bitpack.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\lib\x86_vc\mmxidct.c">
+    <ClCompile Include="..\..\lib\mathops.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\lib\x86_vc\mmxstate.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\lib\x86_vc\x86cpu.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\lib\x86_vc\x86enc.c">
+    <ClCompile Include="..\..\lib\fragment.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\lib\x86_vc\x86state.c">
+      <Filter>Source Files\x86_vc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\x86_vc\x86enc.c">
+      <Filter>Source Files\x86_vc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\x86_vc\mmxencfrag.c">
+      <Filter>Source Files\x86_vc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\encfrag.c">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\fdct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\idct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\x86_vc\mmxidct.c">
+      <Filter>Source Files\x86_vc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\x86_vc\mmxfdct.c">
+      <Filter>Source Files\x86_vc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\x86_vc\x86cpu.c">
+      <Filter>Source Files\x86_vc</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -167,9 +170,6 @@
     <ClInclude Include="..\..\lib\huffman.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\lib\idct.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\lib\ocintrin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -179,5 +179,22 @@
     <ClInclude Include="..\..\lib\x86_vc\x86cpu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\lib\state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\x86_vc\x86enc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\x86_vc\x86int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\x86_vc\x86zigzag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="theora.def">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

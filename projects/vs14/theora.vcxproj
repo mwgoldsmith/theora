@@ -203,8 +203,8 @@
   DEL "$(OutDir)..\..\licenses\$(ProjectName).txt"
 )
 
-IF EXIST "$(OutDir)..\..\include\$(ProjectName)" (
-  RD /s /q "$(OutDir)..\..\include\$(ProjectName)"
+IF EXIST "$(OutDir)..\..\include\theora" (
+  RD /s /q "$(OutDir)..\..\include\theora"
 )</Command>
     </PreBuildEvent>
     <PostBuildEvent>
@@ -213,11 +213,11 @@ ECHO Off
 SETLOCAL EnableDelayedExpansion EnableExtensions
 
 MKDIR "$(OutDir)..\..\include"
-MKDIR "$(OutDir)..\..\include\$(ProjectName)"
+MKDIR "$(OutDir)..\..\include\theora"
 
-FOR %%H IN (codec.h theora.h theoradec.h theoraenc.h) DO (
+FOR %%H IN (codec.h theora.h) DO (
   SET "_HEADER=%%H"
-  COPY "$(ProjectDir)..\..\include\$(ProjectName)\!_HEADER!" "$(OutDir)..\..\include\$(ProjectName)"
+  COPY "$(ProjectDir)..\..\include\theora\!_HEADER!" "$(OutDir)..\..\include\theora"
 )
 
 MKDIR "$(OutDir)..\..\licenses"
@@ -253,8 +253,8 @@ ENDLOCAL
   DEL "$(OutDir)..\..\licenses\$(ProjectName).txt"
 )
 
-IF EXIST "$(OutDir)..\..\include\$(ProjectName)" (
-  RD /s /q "$(OutDir)..\..\include\$(ProjectName)"
+IF EXIST "$(OutDir)..\..\include\theora" (
+  RD /s /q "$(OutDir)..\..\include\theora"
 )</Command>
     </PreBuildEvent>
     <PostBuildEvent>
@@ -263,11 +263,11 @@ ECHO Off
 SETLOCAL EnableDelayedExpansion EnableExtensions
 
 MKDIR "$(OutDir)..\..\include"
-MKDIR "$(OutDir)..\..\include\$(ProjectName)"
+MKDIR "$(OutDir)..\..\include\theora"
 
-FOR %%H IN (codec.h theora.h theoradec.h theoraenc.h) DO (
+FOR %%H IN (codec.h theora.h) DO (
   SET "_HEADER=%%H"
-  COPY "$(ProjectDir)..\..\include\$(ProjectName)\!_HEADER!" "$(OutDir)..\..\include\$(ProjectName)"
+  COPY "$(ProjectDir)..\..\include\theora\!_HEADER!" "$(OutDir)..\..\include\theora"
 )
 
 MKDIR "$(OutDir)..\..\licenses"
@@ -306,8 +306,8 @@ ENDLOCAL
   DEL "$(OutDir)..\..\licenses\$(ProjectName).txt"
 )
 
-IF EXIST "$(OutDir)..\..\include\$(ProjectName)" (
-  RD /s /q "$(OutDir)..\..\include\$(ProjectName)"
+IF EXIST "$(OutDir)..\..\include\theora" (
+  RD /s /q "$(OutDir)..\..\include\theora"
 )</Command>
     </PreBuildEvent>
     <PostBuildEvent>
@@ -316,11 +316,11 @@ ECHO Off
 SETLOCAL EnableDelayedExpansion EnableExtensions
 
 MKDIR "$(OutDir)..\..\include"
-MKDIR "$(OutDir)..\..\include\$(ProjectName)"
+MKDIR "$(OutDir)..\..\include\theora"
 
-FOR %%H IN (codec.h theora.h theoradec.h theoraenc.h) DO (
+FOR %%H IN (codec.h theora.h) DO (
   SET "_HEADER=%%H"
-  COPY "$(ProjectDir)..\..\include\$(ProjectName)\!_HEADER!" "$(OutDir)..\..\include\$(ProjectName)"
+  COPY "$(ProjectDir)..\..\include\theora\!_HEADER!" "$(OutDir)..\..\include\theora"
 )
 
 MKDIR "$(OutDir)..\..\licenses"
@@ -358,8 +358,8 @@ ENDLOCAL
   DEL "$(OutDir)..\..\licenses\$(ProjectName).txt"
 )
 
-IF EXIST "$(OutDir)..\..\include\$(ProjectName)" (
-  RD /s /q "$(OutDir)..\..\include\$(ProjectName)"
+IF EXIST "$(OutDir)..\..\include\theora" (
+  RD /s /q "$(OutDir)..\..\include\theora"
 )</Command>
     </PreBuildEvent>
     <PostBuildEvent>
@@ -368,11 +368,11 @@ ECHO Off
 SETLOCAL EnableDelayedExpansion EnableExtensions
 
 MKDIR "$(OutDir)..\..\include"
-MKDIR "$(OutDir)..\..\include\$(ProjectName)"
+MKDIR "$(OutDir)..\..\include\theora"
 
-FOR %%H IN (codec.h theora.h theoradec.h theoraenc.h) DO (
+FOR %%H IN (codec.h theora.h) DO (
   SET "_HEADER=%%H"
-  COPY "$(ProjectDir)..\..\include\$(ProjectName)\!_HEADER!" "$(OutDir)..\..\include\$(ProjectName)"
+  COPY "$(ProjectDir)..\..\include\theora\!_HEADER!" "$(OutDir)..\..\include\theora"
 )
 
 MKDIR "$(OutDir)..\..\licenses"
@@ -406,7 +406,7 @@ ENDLOCAL
       <ProgramDatabaseFile>$(OutDir)..\..\lib\$(PlatformTarget)\$(TargetName).pdb</ProgramDatabaseFile>
       <AdditionalLibraryDirectories>$(OutDir)..\..\lib\$(PlatformTarget)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>oggd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(ProjectDir)..\..\lib\theora.def </ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(ProjectDir)theora.def </ModuleDefinitionFile>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <LargeAddressAware>true</LargeAddressAware>
     </Link>
@@ -415,8 +415,8 @@ ENDLOCAL
   DEL "$(OutDir)..\..\licenses\$(ProjectName).txt"
 )
 
-IF EXIST "$(OutDir)..\..\include\$(ProjectName)" (
-  RD /s /q "$(OutDir)..\..\include\$(ProjectName)"
+IF EXIST "$(OutDir)..\..\include\theora" (
+  RD /s /q "$(OutDir)..\..\include\theora"
 )</Command>
     </PreBuildEvent>
     <PostBuildEvent>
@@ -425,11 +425,11 @@ ECHO Off
 SETLOCAL EnableDelayedExpansion EnableExtensions
 
 MKDIR "$(OutDir)..\..\include"
-MKDIR "$(OutDir)..\..\include\$(ProjectName)"
+MKDIR "$(OutDir)..\..\include\theora"
 
-FOR %%H IN (codec.h theora.h theoradec.h theoraenc.h) DO (
+FOR %%H IN (codec.h theora.h) DO (
   SET "_HEADER=%%H"
-  COPY "$(ProjectDir)..\..\include\$(ProjectName)\!_HEADER!" "$(OutDir)..\..\include\$(ProjectName)"
+  COPY "$(ProjectDir)..\..\include\theora\!_HEADER!" "$(OutDir)..\..\include\theora"
 )
 
 MKDIR "$(OutDir)..\..\licenses"
@@ -463,7 +463,7 @@ ENDLOCAL
       <ProgramDatabaseFile>$(OutDir)..\..\lib\$(PlatformTarget)\$(TargetName).pdb</ProgramDatabaseFile>
       <AdditionalLibraryDirectories>$(OutDir)..\..\lib\$(PlatformTarget)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>oggd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(ProjectDir)..\..\lib\theora.def </ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(ProjectDir)theora.def </ModuleDefinitionFile>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
     </Link>
     <PreBuildEvent>
@@ -471,8 +471,8 @@ ENDLOCAL
   DEL "$(OutDir)..\..\licenses\$(ProjectName).txt"
 )
 
-IF EXIST "$(OutDir)..\..\include\$(ProjectName)" (
-  RD /s /q "$(OutDir)..\..\include\$(ProjectName)"
+IF EXIST "$(OutDir)..\..\include\theora" (
+  RD /s /q "$(OutDir)..\..\include\theora"
 )</Command>
     </PreBuildEvent>
     <PostBuildEvent>
@@ -481,11 +481,11 @@ ECHO Off
 SETLOCAL EnableDelayedExpansion EnableExtensions
 
 MKDIR "$(OutDir)..\..\include"
-MKDIR "$(OutDir)..\..\include\$(ProjectName)"
+MKDIR "$(OutDir)..\..\include\theora"
 
-FOR %%H IN (codec.h theora.h theoradec.h theoraenc.h) DO (
+FOR %%H IN (codec.h theora.h) DO (
   SET "_HEADER=%%H"
-  COPY "$(ProjectDir)..\..\include\$(ProjectName)\!_HEADER!" "$(OutDir)..\..\include\$(ProjectName)"
+  COPY "$(ProjectDir)..\..\include\theora\!_HEADER!" "$(OutDir)..\..\include\theora"
 )
 
 MKDIR "$(OutDir)..\..\licenses"
@@ -521,7 +521,7 @@ ENDLOCAL
       <ProgramDatabaseFile>$(OutDir)..\..\lib\$(PlatformTarget)\$(TargetName).pdb</ProgramDatabaseFile>
       <AdditionalLibraryDirectories>$(OutDir)..\..\lib\$(PlatformTarget)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(ProjectDir)..\..\lib\theora.def </ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(ProjectDir)theora.def </ModuleDefinitionFile>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <LargeAddressAware>true</LargeAddressAware>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -532,8 +532,8 @@ ENDLOCAL
   DEL "$(OutDir)..\..\licenses\$(ProjectName).txt"
 )
 
-IF EXIST "$(OutDir)..\..\include\$(ProjectName)" (
-  RD /s /q "$(OutDir)..\..\include\$(ProjectName)"
+IF EXIST "$(OutDir)..\..\include\theora" (
+  RD /s /q "$(OutDir)..\..\include\theora"
 )</Command>
     </PreBuildEvent>
     <PostBuildEvent>
@@ -542,11 +542,11 @@ ECHO Off
 SETLOCAL EnableDelayedExpansion EnableExtensions
 
 MKDIR "$(OutDir)..\..\include"
-MKDIR "$(OutDir)..\..\include\$(ProjectName)"
+MKDIR "$(OutDir)..\..\include\theora"
 
-FOR %%H IN (codec.h theora.h theoradec.h theoraenc.h) DO (
+FOR %%H IN (codec.h theora.h) DO (
   SET "_HEADER=%%H"
-  COPY "$(ProjectDir)..\..\include\$(ProjectName)\!_HEADER!" "$(OutDir)..\..\include\$(ProjectName)"
+  COPY "$(ProjectDir)..\..\include\theora\!_HEADER!" "$(OutDir)..\..\include\theora"
 )
 
 MKDIR "$(OutDir)..\..\licenses"
@@ -583,7 +583,7 @@ ENDLOCAL
       <ProgramDatabaseFile>$(OutDir)..\..\lib\$(PlatformTarget)\$(TargetName).pdb</ProgramDatabaseFile>
       <AdditionalLibraryDirectories>$(OutDir)..\..\lib\$(PlatformTarget)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>$(ProjectDir)..\..\lib\theora.def </ModuleDefinitionFile>
+      <ModuleDefinitionFile>$(ProjectDir)theora.def </ModuleDefinitionFile>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
@@ -593,8 +593,8 @@ ENDLOCAL
   DEL "$(OutDir)..\..\licenses\$(ProjectName).txt"
 )
 
-IF EXIST "$(OutDir)..\..\include\$(ProjectName)" (
-  RD /s /q "$(OutDir)..\..\include\$(ProjectName)"
+IF EXIST "$(OutDir)..\..\include\theora" (
+  RD /s /q "$(OutDir)..\..\include\theora"
 )</Command>
     </PreBuildEvent>
     <PostBuildEvent>
@@ -603,11 +603,11 @@ ECHO Off
 SETLOCAL EnableDelayedExpansion EnableExtensions
 
 MKDIR "$(OutDir)..\..\include"
-MKDIR "$(OutDir)..\..\include\$(ProjectName)"
+MKDIR "$(OutDir)..\..\include\theora"
 
-FOR %%H IN (codec.h theora.h theoradec.h theoraenc.h) DO (
+FOR %%H IN (codec.h theora.h) DO (
   SET "_HEADER=%%H"
-  COPY "$(ProjectDir)..\..\include\$(ProjectName)\!_HEADER!" "$(OutDir)..\..\include\$(ProjectName)"
+  COPY "$(ProjectDir)..\..\include\theora\!_HEADER!" "$(OutDir)..\..\include\theora"
 )
 
 MKDIR "$(OutDir)..\..\licenses"
@@ -649,15 +649,21 @@ ENDLOCAL
   <ItemGroup>
     <ClCompile Include="..\..\lib\analyze.c" />
     <ClCompile Include="..\..\lib\apiwrapper.c" />
+    <ClCompile Include="..\..\lib\bitpack.c" />
     <ClCompile Include="..\..\lib\decapiwrapper.c" />
     <ClCompile Include="..\..\lib\decinfo.c" />
     <ClCompile Include="..\..\lib\decode.c" />
     <ClCompile Include="..\..\lib\dequant.c" />
     <ClCompile Include="..\..\lib\encapiwrapper.c" />
+    <ClCompile Include="..\..\lib\encfrag.c" />
     <ClCompile Include="..\..\lib\encinfo.c" />
     <ClCompile Include="..\..\lib\encode.c" />
     <ClCompile Include="..\..\lib\enquant.c" />
+    <ClCompile Include="..\..\lib\fdct.c" />
+    <ClCompile Include="..\..\lib\fragment.c" />
     <ClCompile Include="..\..\lib\huffenc.c" />
+    <ClCompile Include="..\..\lib\idct.c" />
+    <ClCompile Include="..\..\lib\mathops.c" />
     <ClCompile Include="..\..\lib\mcenc.c" />
     <ClCompile Include="..\..\lib\rate.c" />
     <ClCompile Include="..\..\lib\tokenize.c" />
@@ -666,9 +672,17 @@ ENDLOCAL
     <ClCompile Include="..\..\lib\internal.c" />
     <ClCompile Include="..\..\lib\quant.c" />
     <ClCompile Include="..\..\lib\state.c" />
+    <ClCompile Include="..\..\lib\x86_vc\mmxencfrag.c" />
+    <ClCompile Include="..\..\lib\x86_vc\mmxfdct.c" />
+    <ClCompile Include="..\..\lib\x86_vc\mmxfrag.c" />
+    <ClCompile Include="..\..\lib\x86_vc\mmxidct.c" />
     <ClCompile Include="..\..\lib\x86_vc\mmxstate.c" />
+    <ClCompile Include="..\..\lib\x86_vc\x86cpu.c" />
     <ClCompile Include="..\..\lib\x86_vc\x86enc.c" />
     <ClCompile Include="..\..\lib\x86_vc\x86state.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="theora.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
